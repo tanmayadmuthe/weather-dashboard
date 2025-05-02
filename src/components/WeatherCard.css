@@ -1,0 +1,58 @@
+.forecast-card {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--transition);
+    cursor: pointer;
+  }
+  
+  .forecast-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    background: rgba(255, 255, 255, 0.9);
+  }
+  
+  .forecast-day {
+    font-size: 1.2rem;
+    color: var(--dark);
+    margin-bottom: 0.2rem;
+  }
+  
+  .forecast-date {
+    font-size: 0.8rem;
+    color: #6c757d;
+    margin-bottom: 0.8rem;
+  }
+  
+  .forecast-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    margin: 0.5rem 0;
+    filter: drop-shadow(0 2px 2px rgba(0,0,0,0.1));
+  }
+  
+  .forecast-description {
+    text-transform: capitalize;
+    color: var(--primary);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .forecast-temps {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .forecast-max {
+    font-weight: 700;
+    color: var(--dark);
+  }
+  
+  .forecast-min {
+    color: #6c757d;
+  }

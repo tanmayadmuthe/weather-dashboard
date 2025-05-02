@@ -1,0 +1,35 @@
+.forecast-section {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.5s ease 0.2s both;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .forecast-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .forecast-cards {
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .forecast-cards {
+      grid-template-columns: 1fr;
+    }
+  }
